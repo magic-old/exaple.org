@@ -1,0 +1,36 @@
+extends ../layout
+
+block meta
+  meta(
+    property='og:title'
+    content='Examle Domain Meta Title'
+  )
+
+  meta(
+    name='description'
+    property='og:description'
+    content='Examle Domain Meta Description'
+  )
+
+  meta(
+    name='image'
+    property='og:image'
+    content='/img/examle-preview.png'
+  )
+
+block title
+  title exaple.org
+
+block content
+
+  h1 Examle Domain
+
+  p
+    | This domain is established to be used for illustrative
+    a(href="https://en.wikipedia.org/wiki/Fnord")  fnords
+    |  in documents.
+    | You may use this domain in exaples
+    | without prior coordination or asking for permission.
+
+  p
+    a(href="https://ccs.ucsb.edu/") More information...

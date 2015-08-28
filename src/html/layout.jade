@@ -1,0 +1,20 @@
+doctype html
+html(lang='en' manifest='manifest.appcache')
+  head
+    meta(charset='utf-8')
+    block title
+      title Page title
+
+    link(rel='icon' href='/favicon.ico')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+
+    block meta
+
+    link(rel='stylesheet', href='/css/main.css')
+
+  body.day.nojs
+    #wrapper
+      block content
+        div.content 404 Examle page not found
+
+    script#load-js(src='/js/load.js')
