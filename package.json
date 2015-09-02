@@ -10,19 +10,14 @@
     "type": "git",
     "url": "git+https://github.com/magic/exaple.org.git"
   },
-  "author": "Jascha Ehrenreich <jascha@jaeh.at>",
+  "author": "Wizards@Work",
   "license": "AGPL-3.0",
   "bugs": {
     "url": "https://github.com/magic/exaple.org/issues"
   },
   "homepage": "http://exaple.org",
-  "devDependencies": {
-    "babel": "^5.8.21",
-    "babelify": "^6.1.3",
-    "browserify": "^11.0.1",
+  "dependencies": {
     "gulp": "^3.9.0",
-    "jade": "^1.11.0",
-    "magicbuilder": "magic/builder",
-    "nib": "^1.1.0"
+    "builder": "magic/builder"
   }
 }
