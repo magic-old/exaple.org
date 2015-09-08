@@ -17,7 +17,7 @@
     "url": "https://github.com/magic/exaple.org/issues"
   },
   "homepage": "http://exaple.org",
-  "dependencies": {
+  "devDependencies": {
     "gulp": "^3.9.0",
     "builder": "magic/builder"
   }
