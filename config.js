@@ -90,7 +90,7 @@ var server = {
 };
 
 module.exports = {
-  CNAME: 'magicshifter.net',
+  CNAME: 'exaple.net',
   port: 1337,
   pages: '/ /index.html',
   pageItems: {
