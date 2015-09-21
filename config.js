@@ -90,7 +90,7 @@ var server = {
 };
 
 module.exports = {
-  CNAME: 'exaple.net',
+  CNAME: env === 'development' ? 'exaple' : 'exaple.net',
   port: 1337,
   pages: '/ /index.html',
   pageItems: {
