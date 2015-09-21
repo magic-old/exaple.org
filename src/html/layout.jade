@@ -2,6 +2,7 @@ doctype html
 html(lang='en')
   head
     meta(charset='utf-8')
+
     block title
       title Page title
 
@@ -12,9 +13,18 @@ html(lang='en')
 
     link(rel='stylesheet', href='/css/main.css')
 
-  body.day.nojs
+  body.nojs
     #wrapper
       block content
         div.content 404 Examle page not found
 
-    script#load-js(src='/js/load.js')
+    script.
+      var d = document;
+      var b = d.body;
+      var s = d.createElement('script');
+      b.className = b.className.replace('nojs', 'js');
+      s.src = '/js/index.js';
+      b.appendChild(s);
+
+    if env === 'development'
+      script(src='http://localhost:35729/livereload.js')
